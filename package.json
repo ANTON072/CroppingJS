@@ -1,0 +1,63 @@
+{
+  "name": "cropping-js",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:ANTON072/CroppingJS.git",
+  "author": "ougi <bdbkx286@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack -w",
+    "start:dev": "webpack-dev-server --config webpack.config.dev.js",
+    "build": "NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "html-webpack-plugin": "^4.0.0-beta.11",
+    "prettier": "^1.19.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "plugins": [
+      "import",
+      "prettier"
+    ],
+    "rules": {
+      "semi": 0
+    }
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "singleQuote": false,
+    "semi": false
+  }
+}
